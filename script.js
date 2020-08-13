@@ -1,10 +1,8 @@
 const video = document.getElementById('video')
 
 Promise.all([
-  await faceapi.nets.tinyFaceDetector.loadFromUri('/models'),
-  await faceapi.nets.faceLandmark68Net.loadFromUri('/models'),
-  await faceapi.nets.faceRecognitionNet.loadFromUri('/models'),
-  await faceapi.nets.faceExpressionNet.loadFromUri('/models')
+net.load(await faceapi.fetchNetWeights('/models/face_detection_model.weights'))
+
 ]).then(startVideo)
 
 function startVideo() {
