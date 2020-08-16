@@ -1,10 +1,10 @@
 const video = document.getElementById('video')
 
 Promise.all([
-  faceapi.nets.tinyFaceDetector.loadFromUri('https://github.com/justadudewhohacks/face-api.js/tree/master/weights'),
-  faceapi.nets.faceLandmark68Net.loadFromUri('https://github.com/justadudewhohacks/face-api.js/tree/master/weights'),
-  faceapi.nets.faceRecognitionNet.loadFromUri('https://github.com/justadudewhohacks/face-api.js/tree/master/weights'),
-  faceapi.nets.faceExpressionNet.loadFromUri('https://github.com/justadudewhohacks/face-api.js/tree/master/weights')
+  faceapi.nets.tinyFaceDetector.loadFromUri('https://github.com/RAVANREX/FaceDetectionWithJavaScript/tree/master/models'),
+  faceapi.nets.faceLandmark68Net.loadFromUri('https://github.com/RAVANREX/FaceDetectionWithJavaScript/tree/master/models'),
+  faceapi.nets.faceRecognitionNet.loadFromUri('https://github.com/RAVANREX/FaceDetectionWithJavaScript/tree/master/models'),
+  faceapi.nets.faceExpressionNet.loadFromUri('https://github.com/RAVANREX/FaceDetectionWithJavaScript/tree/master/models')
 ]).then(startVideo)
 
 function startVideo() {
