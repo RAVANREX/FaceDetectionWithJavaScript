@@ -1,10 +1,10 @@
 const video = document.getElementById('video')
 
 Promise.all([
-  faceapi.nets.tinyFaceDetector.loadFromUri('/models'),
-  faceapi.nets.faceLandmark68Net.loadFromUri('/models'),
-  faceapi.nets.faceRecognitionNet.loadFromUri('/models'),
-  faceapi.nets.faceExpressionNet.loadFromUri('/models')
+  faceapi.nets.tinyFaceDetector.loadFromUri('https://ravanrex.github.io/models/face_expression_model-weights_manifest.json'),
+  faceapi.nets.faceLandmark68Net.loadFromUri('https://ravanrex.github.io/models/face_expression_model-weights_manifest.json'),
+  faceapi.nets.faceRecognitionNet.loadFromUri('https://ravanrex.github.io/models/face_expression_model-weights_manifest.json'),
+  faceapi.nets.faceExpressionNet.loadFromUri('https://ravanrex.github.io/models/face_expression_model-weights_manifest.json')
 ]).then(startVideo)
 
 function startVideo() {
